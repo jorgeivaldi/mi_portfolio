@@ -1,11 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import './index.css'
 import App from './App'
+import { StyleProvider } from './StyleProvider'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <StyleProvider>
+      <App />
+    </StyleProvider>
   </React.StrictMode>,
   document.getElementById('root')
 )
